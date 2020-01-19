@@ -8,7 +8,7 @@ import (
 	"fmt"
 	"image"
 
-	. "github.com/gizak/termui/v3"
+	. "github.com/sokkalf/termui/v3"
 )
 
 // Plot has two modes: line(default) and scatter.
@@ -76,6 +76,23 @@ func NewPlot() *Plot {
 		PlotType:        LineChart,
 	}
 }
+
+func GetMinFloat64From2dSlice(slices [][]float64) (float64, error) {
+        if len(slices) == 0 {
+                return 0, fmt.Errorf("cannot get max value from empty slice")
+        }
+        var min float64
+        min = slices[0][0]
+        for _, slice := range slices {
+                for _, val := range slice {
+                        if val < min {
+                                min = val
+                        }
+                }
+        }
+        return min, nil
+}
+
 
 func (self *Plot) renderBraille(buf *Buffer, drawArea image.Rectangle, minVal float64, maxVal float64) {
 	canvas := NewCanvas()
