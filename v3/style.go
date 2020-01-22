@@ -18,6 +18,15 @@ const (
 	ColorMagenta Color = 5
 	ColorCyan    Color = 6
 	ColorWhite   Color = 7
+	// extended colors
+	ColorGrey          Color = 8
+	ColorBrightRed     Color = 9
+	ColorBrightGreen   Color = 10
+	ColorBrightYellow  Color = 11
+	ColorBrightBlue    Color = 12
+	ColorBrightMagenta Color = 13
+	ColorBrightCyan    Color = 14
+	ColorBrightWhite   Color = 15
 )
 
 type Modifier uint

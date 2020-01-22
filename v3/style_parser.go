@@ -33,15 +33,23 @@ const (
 
 // StyleParserColorMap can be modified to add custom color parsing to text
 var StyleParserColorMap = map[string]Color{
-	"red":     ColorRed,
-	"blue":    ColorBlue,
-	"black":   ColorBlack,
-	"cyan":    ColorCyan,
-	"yellow":  ColorYellow,
-	"white":   ColorWhite,
-	"clear":   ColorClear,
-	"green":   ColorGreen,
-	"magenta": ColorMagenta,
+	"red":           ColorRed,
+	"blue":          ColorBlue,
+	"black":         ColorBlack,
+	"cyan":          ColorCyan,
+	"yellow":        ColorYellow,
+	"white":         ColorWhite,
+	"clear":         ColorClear,
+	"green":         ColorGreen,
+	"magenta":       ColorMagenta,
+	"grey":          ColorGrey,
+	"brightred":     ColorBrightRed,
+	"brightblue":    ColorBrightBlue,
+	"brightcyan":    ColorBrightCyan,
+	"brightyellow":  ColorBrightYellow,
+	"brightwhite":   ColorBrightWhite,
+	"brightgreen":   ColorBrightGreen,
+	"brightmagenta": ColorBrightMagenta,
 }
 
 var modifierMap = map[string]Modifier{
