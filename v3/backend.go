@@ -14,7 +14,7 @@ func Init() error {
 	if err := tb.Init(); err != nil {
 		return err
 	}
-	tb.SetInputMode(tb.InputEsc | tb.InputMouse)
+	tb.SetInputMode(tb.InputEsc)
 	tb.SetOutputMode(tb.Output256)
 	return nil
 }
